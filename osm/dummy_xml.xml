@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm>
+  <node />
+  <relation>
+    <tag k="amenity" v="bench" />
+  </relation>
+  <node />
+  <relation />
+  <node />
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <relation>
+    <tag k="amenity" v="bench" />
+  </relation>
+  <node>
+    <tag k="amenity" v="river" />
+  </node>
+  <node>
+    <tag k="amenity" v="river" />
+  </node>
+  <way>
+    <tag k="amenity" v="school" />
+  </way>
+  <node />
+  <node />
+  <node />
+  <relation>
+    <tag k="amenity" v="school" />
+  </relation>
+  <node />
+  <relation />
+  <node />
+  <node />
+  <relation />
+  <relation>
+    <tag k="amenity" v="coffee" />
+  </relation>
+  <node>
+    <tag k="amenity" v="bench" />
+  </node>
+  <way />
+  <relation />
+  <way />
+  <way />
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <relation />
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <way>
+    <tag k="amenity" v="bench" />
+  </way>
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <node />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <way />
+  <way>
+    <tag k="amenity" v="school" />
+  </way>
+  <way />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <relation />
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <node>
+    <tag k="amenity" v="bench" />
+  </node>
+  <node />
+  <relation />
+  <node>
+    <tag k="amenity" v="bench" />
+  </node>
+  <way />
+  <way />
+  <relation />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <node />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <relation>
+    <tag k="amenity" v="river" />
+  </relation>
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <relation>
+    <tag k="amenity" v="coffee" />
+  </relation>
+  <way />
+  <relation>
+    <tag k="amenity" v="coffee" />
+  </relation>
+  <node />
+  <node>
+    <tag k="amenity" v="bench" />
+  </node>
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <node />
+  <relation />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <way>
+    <tag k="amenity" v="school" />
+  </way>
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <relation>
+    <tag k="amenity" v="coffee" />
+  </relation>
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <node />
+  <relation>
+    <tag k="amenity" v="river" />
+  </relation>
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <node />
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <way />
+  <way>
+    <tag k="amenity" v="bench" />
+  </way>
+  <relation>
+    <tag k="amenity" v="school" />
+  </relation>
+  <node />
+  <node />
+  <way>
+    <tag k="amenity" v="school" />
+  </way>
+  <relation />
+  <node />
+  <way>
+    <tag k="amenity" v="school" />
+  </way>
+  <relation />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <node />
+  <node>
+    <tag k="amenity" v="river" />
+  </node>
+  <node>
+    <tag k="amenity" v="river" />
+  </node>
+  <way />
+  <way>
+    <tag k="amenity" v="school" />
+  </way>
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <node>
+    <tag k="amenity" v="river" />
+  </node>
+  <relation>
+    <tag k="amenity" v="coffee" />
+  </relation>
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <node />
+  <node />
+  <node />
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <node />
+  <way>
+    <tag k="amenity" v="bench" />
+  </way>
+  <node>
+    <tag k="amenity" v="river" />
+  </node>
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <node>
+    <tag k="amenity" v="river" />
+  </node>
+  <way />
+  <relation />
+  <way />
+  <node />
+  <relation>
+    <tag k="amenity" v="river" />
+  </relation>
+  <way />
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <relation />
+  <node />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <relation />
+  <relation />
+  <node>
+    <tag k="amenity" v="bench" />
+  </node>
+  <node />
+  <relation />
+  <relation />
+  <relation />
+  <node />
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <way />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <way />
+  <node />
+  <node>
+    <tag k="amenity" v="river" />
+  </node>
+  <way />
+  <node>
+    <tag k="amenity" v="bench" />
+  </node>
+  <relation>
+    <tag k="amenity" v="bench" />
+  </relation>
+  <node />
+  <relation>
+    <tag k="amenity" v="bench" />
+  </relation>
+  <node />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <node />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <node />
+  <node />
+  <node />
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <way />
+  <relation>
+    <tag k="amenity" v="school" />
+  </relation>
+  <relation />
+  <relation />
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <relation />
+  <way />
+  <node />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <way />
+  <way>
+    <tag k="amenity" v="bench" />
+  </way>
+  <relation />
+  <way />
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <way />
+  <relation>
+    <tag k="amenity" v="river" />
+  </relation>
+  <relation />
+  <node />
+  <relation>
+    <tag k="amenity" v="bench" />
+  </relation>
+  <relation>
+    <tag k="amenity" v="river" />
+  </relation>
+  <node />
+  <node>
+    <tag k="amenity" v="school" />
+  </node>
+  <node />
+  <relation />
+  <way>
+    <tag k="amenity" v="school" />
+  </way>
+  <way>
+    <tag k="amenity" v="bench" />
+  </way>
+  <relation />
+  <node>
+    <tag k="amenity" v="coffee" />
+  </node>
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <way>
+    <tag k="amenity" v="bench" />
+  </way>
+  <node>
+    <tag k="amenity" v="bench" />
+  </node>
+  <node>
+    <tag k="amenity" v="bench" />
+  </node>
+  <relation />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <node />
+  <relation>
+    <tag k="amenity" v="school" />
+  </relation>
+  <way />
+  <relation />
+  <node />
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <way />
+  <relation>
+    <tag k="amenity" v="coffee" />
+  </relation>
+  <node />
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <node>
+    <tag k="amenity" v="river" />
+  </node>
+  <node>
+    <tag k="amenity" v="bench" />
+  </node>
+  <way />
+  <node />
+  <relation />
+  <relation />
+  <way>
+    <tag k="amenity" v="coffee" />
+  </way>
+  <relation>
+    <tag k="amenity" v="river" />
+  </relation>
+  <way />
+  <way>
+    <tag k="amenity" v="river" />
+  </way>
+  <way>
+    <tag k="amenity" v="school" />
+  </way>
+  <relation />
+  <relation />
+  <way>
+    <tag k="amenity" v="bench" />
+  </way>
+  <relation>
+    <tag k="amenity" v="coffee" />
+  </relation>
+</osm>
