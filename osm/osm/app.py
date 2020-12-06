@@ -23,4 +23,4 @@ def add_number_of_schools():
     return jsonify(request_content.build_response())
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
