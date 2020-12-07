@@ -13,7 +13,10 @@ def add_number_of_schools():
     try:
         request_content = models.PostRequestInput(request.data)
         house = models.House(request_content.get_house_location())
-        request_content.add_to_house_details("Schools", house.get_entity_frequency("school"))
+        request_content.add_to_house_details(
+            key="Schools",
+            value=house.get_entity_frequency("school")
+        )
     except json.decoder.JSONDecodeError:
         return fail(400, "Could not read the request body")
     except TypeError:
