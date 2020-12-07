@@ -19,13 +19,13 @@ def add_number_of_schools():
             value=house.get_amenity_frequency("school")
         )
     except json.decoder.JSONDecodeError:
-        return fail(400, "Could not read the request body")
+        return fail(400, "Could convert body to JSON")
     except TypeError:
         return fail(400, "Something is wrong with the input's data stractures")
     except KeyError:
-        return fail(400, "Input should have lat and lon")
+        return fail(404, "Input should have lat and lon")
     return jsonify(request_content.build_response())
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host="0.0.0.0")

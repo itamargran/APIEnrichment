@@ -1,3 +1,5 @@
+import os
+
 import pytest
 
 from osm.models import BoundingBox, House, Location, PostRequestInput
@@ -37,7 +39,8 @@ class TestHouse:
 class TestPostRequestInput:
     @pytest.fixture
     def request_input(self):
-        with open(r"tests/samples/sample_data.txt", "r") as file:
+        path = os.path.join("tests", "samples", "sample_data.txt")
+        with open(path, "r") as file:
             sample_data = file.read()
         return PostRequestInput(sample_data)
 

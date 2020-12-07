@@ -1,6 +1,5 @@
 from flask.testing import FlaskClient
 import pytest
-from typing import Dict
 
 from app import app
 from tests.data_generator import PostRequestContentGenerator
@@ -19,8 +18,6 @@ class TestApp:
 
         valid_response = test_client.post(
             url,
-            data=(
-                PostRequestContentGenerator.generate_post_request_content()
-            ),
+            data=PostRequestContentGenerator.generate_post_request_content()
         )
         assert valid_response.status_code == 200

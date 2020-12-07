@@ -2,10 +2,10 @@ FROM python:3.8
 
 WORKDIR /src
 
+COPY . /src
+
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY src/ .
-
-CMD ["python", "./app.py"]
+CMD ["python", "osm/app.py"]
