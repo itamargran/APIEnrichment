@@ -37,20 +37,18 @@ class House:
             return []
         return ET.fromstring(response.content)
 
-    def count_entities_around_the_house(self, tree=None) -> Dict:
-        if not tree:
-            tree = self._get_nodes()
-
-        entities = {}
+    def count_amenities_around_the_house(self) -> Dict:
+        tree = self._get_nodes()
+        amenities = {}
         for child in tree:
             for description in child.findall("tag"):
                 if description.attrib["k"] == "amenity":
-                    entities[description.attrib["v"]] = entities.get(description.attrib["v"], 0) + 1
-        return entities
+                    amenities[description.attrib["v"]] = amenities.get(description.attrib["v"], 0) + 1
+        return amenities
 
-    def get_entity_frequency(self, entity: str) -> int:
-        counted_entity = self.count_entities_around_the_house()
-        return counted_entity.get(entity, 0)
+    def get_amenity_frequency(self, amenity: str) -> int:
+        counted_amenities = self.count_amenities_around_the_house()
+        return counted_amenities.get(amenity, 0)
 
 
 class PostRequestInput:

@@ -1,3 +1,4 @@
+import json
 import random
 
 import xml.etree.ElementTree as ET
@@ -58,3 +59,14 @@ class OsmXmlGenerator:
         self.prettify(self.xml)
         tree = ET.ElementTree(self.xml)
         tree.write("dummy_xml.xml", encoding="UTF-8", xml_declaration=True)
+
+
+class PostRequestContentGenerator:
+    @staticmethod
+    def generate_post_request_content() -> json:
+        content = {
+            "Latitude": random.uniform(-90, 90),
+            "Longitude": random.uniform(-180, 180),
+        }
+        response = {"data": [content]}
+        return json.dumps(response)

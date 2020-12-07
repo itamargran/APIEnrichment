@@ -1,6 +1,7 @@
 import pytest
+
 from osm.models import BoundingBox, House, Location, PostRequestInput
-from tests.osm_data_generator import OsmXmlGenerator
+from tests.data_generator import OsmXmlGenerator
 
 
 class TestBoundingBox:
@@ -10,6 +11,16 @@ class TestBoundingBox:
         assert bounding_box.borders == [-1, -1, 1, 1]
 
 
+class HouseForTesting(House):
+    def count_amenities_around_the_house(self, tree):
+        amenities = {}
+        for child in tree:
+            for description in child.findall("tag"):
+                if description.attrib["k"] == "amenity":
+                    amenities[description.attrib["v"]] = amenities.get(description.attrib["v"], 0) + 1
+        return amenities
+
+
 class TestHouse:
     @pytest.fixture
     def xml_generator(self):
@@ -17,8 +28,8 @@ class TestHouse:
         return xml_generator
 
     def test_count_entities_around_house(self, xml_generator):
-        house = House(Location(0, 0))
-        entities = house.count_entities_around_the_house(xml_generator.xml)
+        house = HouseForTesting(Location(0, 0))
+        entities = house.count_amenities_around_the_house(xml_generator.xml)
         for item in xml_generator.AMENITY_VALUES:
             assert entities[item] == xml_generator.amenities[item]
 

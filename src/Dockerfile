@@ -1,11 +1,11 @@
 FROM python:3.8
 
-WORKDIR /osm
+WORKDIR /src
 
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY osm/ .
+COPY src/ .
 
 CMD ["python", "./app.py"]

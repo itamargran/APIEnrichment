@@ -11,10 +11,9 @@
             "Car": 1,
             "Landsize": 292,
             "YearBuilt": 1900,
-            "Latitude": -37.797,
-            "Longitude": 144.9051,
+            "Latitude": 33.23069652840255,
+            "Longitude": 35.63793385239929,
             "Address": "9 Lynch St 3011, Melbourne, Australia"
         }
     ]
 }
-        
