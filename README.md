@@ -2,7 +2,7 @@
 
 This is my solution for the take home assingment, in which I was asked to create an enrichment service build on the external Overpass API.
 
-The repo contains a REST API with single endpoint, that recieves data regarding a location (defined by latitude and lonitude) and adds the number of schools in that area.
+The repo contains a REST API with single endpoint, that recieves data regarding a location (defined by latitude and longitude) and adds the number of schools in that area.
 
 For example:
 
