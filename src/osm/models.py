@@ -1,8 +1,12 @@
 import json
 import requests
+from requests.exceptions import ConnectionError, MissingSchema
 
 import xml.etree.ElementTree as ET
+from xml.etree.ElementTree import ParseError
 from typing import Dict, List, Tuple, Union
+
+from errors import OverpassServiceError
 
 
 class Location:
@@ -31,11 +35,13 @@ class House:
 
     def _get_nodes(self) -> ET.Element:
         url = 'http://www.overpass-api.de/api/xapi?*[amenity=*][bbox=%s]' % ",".join([str(x) for x in self.bounding_box])
-        response = requests.get(url)
+        try:
+            response = requests.get(url)
+            return ET.fromstring(response.content)
+        except (ConnectionError, MissingSchema, ParseError):
+            raise OverpassServiceError
         if response.status_code != 200:
-            print(f'Got status code: {response.status_code} from osm request')
-            return []
-        return ET.fromstring(response.content)
+            raise OverpassServiceError
 
     def count_amenities_around_the_house(self) -> Dict:
         tree = self._get_nodes()

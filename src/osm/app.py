@@ -2,7 +2,7 @@ import json
 
 from flask import Flask, jsonify, request
 
-from errors import fail
+from errors import fail, OverpassServiceError
 from models import House, PostRequestInput
 
 
@@ -24,6 +24,8 @@ def add_number_of_schools():
         return fail(400, "Something is wrong with the input's data stractures")
     except KeyError:
         return fail(404, "Input should have lat and lon")
+    except OverpassServiceError:
+        return fail(503, "Please try again later")
     return jsonify(request_content.build_response())
 
 

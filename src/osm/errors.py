@@ -1,6 +1,10 @@
 from flask import abort, jsonify
 
 
+class OverpassServiceError(Exception):
+    pass
+
+
 # https://github.com/PythonFreeCourse/lms/blob/master/lms/models/errors.py
 def fail(status_code: int, error_msg: str):
     data = {
