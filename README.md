@@ -4,28 +4,12 @@ This is my solution for the take home assingment, in which I was asked to create
 
 The repo contains a REST API with single endpoint, that recieves data regarding a location (defined by latitude and longitude) and adds the number of schools in that area.
 
-For example:
+**For example:
 
-**POST /api/enrich**
 ```
-{
-    "data": [
-        {
-            "Address": "9 Lynch St 3011, Melbourne, Australia",
-            "Bathroom": 1,
-            "Bedroom2": 3,
-            "Car": 1,
-            "Date": "2016-03-12",
-            "Landsize": 292,
-            "Latitude": -37.797,
-            "Longitude": 144.9051,
-            "Postcode": 3011,
-            "Rooms": 3,
-            "Suburb": "Footscray",
-            "YearBuilt": 1900
-        }
-    ]
-}
+curl --location --request POST 'localhost:5000/api/enrich' \
+--header 'Content-Type: text/plain' \
+--data-raw '{"data": [{"Latitude":-37.797, "Longitude":144.9051}]}'
 ```
 
  Will return:
@@ -33,19 +17,9 @@ For example:
 {
     "data": [
         {
-            "Address": "9 Lynch St 3011, Melbourne, Australia",
-            "Bathroom": 1,
-            "Bedroom2": 3,
-            "Car": 1,
-            "Date": "2016-03-12",
-            "Landsize": 292,
             "Latitude": -37.797,
             "Longitude": 144.9051,
-            "Postcode": 3011,
-            "Rooms": 3,
             "Schools": 5,
-            "Suburb": "Footscray",
-            "YearBuilt": 1900
         }
     ]
 }
