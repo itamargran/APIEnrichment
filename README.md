@@ -58,6 +58,7 @@ For example:
  ```
  cd ExploriumTakeHomeAssingment
  cd src
+ pip install -r requirements.txt
  pytest -vvv
  ```
  #### Build and Run Docker Container
