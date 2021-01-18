@@ -1,10 +1,28 @@
-# ExploriumTakeHomeAssingment
+# External API Enrichment
 
-This is my solution for the take home assingment, in which I was asked to create an enrichment service build on the external Overpass API.
+An enrichment service build on the external Overpass API.
 
 The repo contains a REST API with single endpoint, that recieves data regarding a location (defined by latitude and longitude) and adds the number of schools in that area.
 
-**For example**:
+## Setup
+ ```
+ git clone https://github.com/itamargran/ExploriumTakeHomeAssingment.git
+ ```
+ #### Run Tests
+ ```
+ cd ExploriumTakeHomeAssingment
+ cd src
+ pip install -r requirements.txt
+ pytest -vvv
+ ```
+ #### Build and Run Docker Container
+ ```
+ docker-compose up
+ ```
+ 
+ 
+
+**Usage Example**:
 
 ```
 curl --location --request POST 'localhost:5000/api/enrich' \
@@ -24,20 +42,4 @@ curl --location --request POST 'localhost:5000/api/enrich' \
     ]
 }
 ``` 
- ## Setup
- ```
- git clone https://github.com/itamargran/ExploriumTakeHomeAssingment.git
- ```
- #### Run Tests
- ```
- cd ExploriumTakeHomeAssingment
- cd src
- pip install -r requirements.txt
- pytest -vvv
- ```
- #### Build and Run Docker Container
- ```
- docker-compose up
- ```
- 
  
