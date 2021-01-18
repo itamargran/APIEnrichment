@@ -2,7 +2,7 @@
 
 An enrichment service build on the external Overpass API.
 
-The repo contains a REST API with single endpoint, that recieves data regarding a location (defined by latitude and longitude) and adds the number of schools in that area.
+The repo contains a REST API with single endpoint, that recieves data regarding a location (defined by latitude and longitude) and adds the number of schools within a boundong box sized 1km-2km around it.
 
 ## Setup
  ```
