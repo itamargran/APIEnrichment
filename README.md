@@ -6,11 +6,11 @@ The repo contains a REST API with single endpoint, that recieves data regarding 
 
 ## Setup
  ```
- git clone https://github.com/itamargran/ExploriumTakeHomeAssingment.git
+ git clone https://github.com/itamargran/APIEnrichment.git
  ```
  #### Run Tests
  ```
- cd ExploriumTakeHomeAssingment
+ cd APIEnrichment
  cd src
  pip install -r requirements.txt
  pytest -vvv
